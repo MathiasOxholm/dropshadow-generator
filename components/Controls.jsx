@@ -58,8 +58,8 @@ const Controls = () => {
         title="Range"
         value={range}
         onChange={handleRange}
-        min={0}
-        max={200}
+        min={-100}
+        max={100}
         unit="px"
       />
 

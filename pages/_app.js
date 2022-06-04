@@ -40,6 +40,39 @@ function MyApp({ Component, pageProps }) {
     setColorRGB(`${r}, ${g}, ${b}`);
   };
 
+  const handlePreset = (preset) => {
+    switch (preset) {
+      case "default":
+        setHorizontalOffset(0);
+        setVerticalOffset(10);
+        setBlur(40);
+        setRange(10);
+        setOpacity(22);
+        break;
+      case "small":
+        setHorizontalOffset(0);
+        setVerticalOffset(4);
+        setBlur(6);
+        setRange(-1);
+        setOpacity(10);
+        break;
+      case "medium":
+        setHorizontalOffset(0);
+        setVerticalOffset(10);
+        setBlur(15);
+        setRange(-3);
+        setOpacity(15);
+        break;
+      case "large":
+        setHorizontalOffset(0);
+        setVerticalOffset(25);
+        setBlur(50);
+        setRange(-12);
+        setOpacity(25);
+        break;
+    }
+  };
+
   return (
     <AppContext.Provider
       value={{
@@ -56,6 +89,7 @@ function MyApp({ Component, pageProps }) {
         handleOpacity,
         handleColor,
         colorRGB,
+        handlePreset,
       }}
     >
       <Component {...pageProps} />

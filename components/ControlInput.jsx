@@ -27,7 +27,7 @@ const ControlInput = ({
         max={max}
         value={value}
         onChange={onChange}
-        className="h-1 w-full cursor-pointer appearance-none rounded-lg bg-blue-100"
+        className="h-1 w-full cursor-pointer appearance-none rounded-lg bg-blue-100 transition-all duration-300"
       />
     </div>
   );
