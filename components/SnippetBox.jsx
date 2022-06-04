@@ -34,7 +34,7 @@ const SnippetBox = () => {
   return (
     <>
       <div
-        className="flex cursor-pointer flex-col gap-4 rounded-md bg-white py-8 px-8 font-mono"
+        className="flex flex-col gap-4 rounded-md bg-white py-8 px-8 font-mono"
         style={Dropshadow}
       >
         <p className="select-none text-gray-400">.box-shadow {"{"}</p>

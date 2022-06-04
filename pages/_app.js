@@ -1,6 +1,6 @@
 import { AppContext } from "../context";
-import "../styles/globals.css";
 import { useState } from "react";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const [horizontalOffset, setHorizontalOffset] = useState(0);

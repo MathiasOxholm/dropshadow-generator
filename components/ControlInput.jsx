@@ -13,7 +13,7 @@ const ControlInput = ({
       <div className="flex items-center justify-between">
         <label
           htmlFor={name}
-          className="cursor-pointer text-gray-600 transition"
+          className="text-gray-00 cursor-pointer transition"
         >
           {title}
         </label>
