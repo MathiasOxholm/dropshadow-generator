@@ -11,7 +11,7 @@ const SnippetBox = () => {
     colorRGB,
     handlePreset,
   } = useContext(AppContext);
-  const [realOpacity, setRealOpacity] = useState(opacity);
+  const [realOpacity, setRealOpacity] = useState(0.22);
   const [textCopied, setTextCopied] = useState(false);
 
   const Dropshadow = {
@@ -48,7 +48,7 @@ const SnippetBox = () => {
   return (
     <div className="flex flex-col gap-6">
       <div
-        className="flex flex-col gap-4 rounded-md bg-white py-8 px-8 font-mono transition-all "
+        className="flex flex-col gap-4 rounded-md bg-white py-8 px-8 font-mono"
         style={Dropshadow}
       >
         <p className="select-none text-gray-400">.box-shadow {"{"}</p>
