@@ -14,13 +14,13 @@ export default function Home() {
       <main>
         <div className="container my-auto grid max-w-6xl grid-cols-5 gap-12">
           <div className="z-10 col-span-2 flex flex-col gap-8">
-            <h2 className="text-2xl font-medium text-gray-800">
+            <h2 className="select-none text-2xl font-medium text-gray-800">
               Adjust shadow parameters
             </h2>
             <Controls />
           </div>
           <div className="col-span-3 flex flex-col gap-8">
-            <h2 className="text-2xl font-medium text-gray-800">
+            <h2 className="select-none text-2xl font-medium text-gray-800">
               CSS Code snippet
             </h2>
             <SnippetBox />
