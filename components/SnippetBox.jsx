@@ -46,7 +46,10 @@ const SnippetBox = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-6">
+    <div
+      className="flex cursor-pointer flex-col gap-6"
+      onClick={handleCopyText}
+    >
       <div
         className="flex flex-col gap-4 rounded-md bg-white py-8 px-8 font-mono"
         style={Dropshadow}
